@@ -49,7 +49,8 @@
     <div class="jumbotron">
       <h1>Internet Reset</h1>
       <p>Rebooting the router will disrupt active traffic on the network.</p>
-      <a href="http://192.168.0.1/utilities_reboot.html" target="_blank" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-refresh"></span> Reset Internet</a>
+      <p>If you do not see the reset button just click the button again</p>
+      <a href="http://192.168.0.1/utilities_reboot.html" target="_blank" class="btn btn-danger btn-lg" data-toggle="tooltip" data-placement="right" title="This will take about 30 seconds"><span class="glyphicon glyphicon-refresh"></span> Reset Internet</a>
        
       
 </div>
@@ -68,6 +69,12 @@
         function delay (URL) {
             setTimeout( function() { window.location = URL }, 500 );
         } 
+    </script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+      
     </script>
   </body>
 </html>
